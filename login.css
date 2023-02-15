@@ -1,0 +1,112 @@
+body {
+  font-family: "Overpass", sans-serif;
+  font-weight: normal;
+  font-size: 100%;
+  color: #1b262c;
+
+  margin: 0;
+
+  color: transparent;
+    background-image: linear-gradient(to left, #cc00ff, #68eec1, #3463db, #402ecc, #cc00ff);    
+    background-clip: text;
+    animation: color 60s linear infinite;
+    background-size: 10%;
+    
+
+}
+
+@keyframes color {
+  from {
+    background-position: 100% 550%;
+  }
+
+  to {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 400%;
+  color: rgb(0, 0, 0);
+  
+}
+
+.input {
+  border-radius: 12px;
+  padding: 10px;
+  margin: 3px;
+  text-align: center;
+}
+
+.text {
+  border: 2px solid #738e1a;
+  
+}
+
+.text:hover {
+  border: 2px solid #576b14; /* Green */
+}
+
+.button {
+  background-color: #f8e577;
+  color: rgb(0, 0, 0);
+  transition-duration: 0.4s;
+
+  border: 2px solid #738e1a; /* Green */
+}
+
+.button:hover {
+  background-color: #a18b0f; /* Green */
+}
+
+input {
+  margin-top: 1%;
+  flex-grow: 1;
+}
+
+.cuadrado {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: auto;
+  top: 20%;
+  padding: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+  background: linear-gradient(
+    rgba(226, 103, 230, 0.725),
+    rgba(230, 180, 52, 0.653)
+  );
+  text-align: center;
+  align-items: center;
+
+  color: transparent;
+  background-image: linear-gradient(
+    to left,
+    #ffd700,
+    #7b68ee,
+    #3498db,
+    #2ecc71,
+    #ffd700
+  );
+  background-clip: text;
+  animation: color 25s linear infinite;
+  background-size: 500%;
+
+
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 25px,
+    rgba(0, 255, 17, 0.5) 25px,
+    rgba(246, 6, 174, 0.5) 50px
+  );
+}
+
+@media screen and (min-width: 1000px) {
+  .cuadrado {
+    margin-left: 35%;
+    margin-right: 35%;
+  }
+}
