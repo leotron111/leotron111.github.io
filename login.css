@@ -4,65 +4,39 @@ body {
   font-size: 100%;
   color: #1b262c;
 
-  margin: 0;
-
-  color: transparent;
-    background-image: linear-gradient(to left, #cc00ff, #68eec1, #3463db, #402ecc, #cc00ff);    
-    background-clip: text;
-    animation: color 60s linear infinite;
-    background-size: 10%;
-    
-
+  animation: color 50s linear infinite;
+  background-size: 400%;
+}
+.titulo {
+  text-align: center;
+  text-shadow: 3px 3px 1px red, 5px 5px 2px yellow, 8px 8px 3px blue;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: auto; /* Ancho de 150 píxeles */
+  height: 90px; /* Alto de 150 píxeles */
+  background: rgba(255, 255, 255, 0.525); /* Fondo de color rojo */
+  border: transparent;
 }
 
 @keyframes color {
   from {
-    background-position: 100% 550%;
+    background-position: 100% 50%;
   }
 
   to {
-    background-position: 0% 50%;
+    background-position: 100% 20%;
   }
 }
 
 h1 {
-  text-align: center;
-  font-size: 400%;
-  color: rgb(0, 0, 0);
-  
+  color: #1b262c;
 }
+.fondo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
 
-.input {
-  border-radius: 12px;
-  padding: 10px;
-  margin: 3px;
-  text-align: center;
-}
-
-.text {
-  border: 2px solid #738e1a;
-  
-}
-
-.text:hover {
-  border: 2px solid #576b14; /* Green */
-}
-
-.button {
-  background-color: #f8e577;
-  color: rgb(0, 0, 0);
-  transition-duration: 0.4s;
-
-  border: 2px solid #738e1a; /* Green */
-}
-
-.button:hover {
-  background-color: #a18b0f; /* Green */
-}
-
-input {
-  margin-top: 1%;
-  flex-grow: 1;
+  background-image: url(img/18824.jpg);
 }
 
 .cuadrado {
@@ -74,39 +48,7 @@ input {
   padding: 10px;
   margin-left: 25%;
   margin-right: 25%;
-  background: linear-gradient(
-    rgba(226, 103, 230, 0.725),
-    rgba(230, 180, 52, 0.653)
-  );
+  background-image: url(img/18824.jpg);
   text-align: center;
   align-items: center;
-
-  color: transparent;
-  background-image: linear-gradient(
-    to left,
-    #ffd700,
-    #7b68ee,
-    #3498db,
-    #2ecc71,
-    #ffd700
-  );
-  background-clip: text;
-  animation: color 25s linear infinite;
-  background-size: 500%;
-
-
-  background-image: repeating-linear-gradient(
-    45deg,
-    transparent,
-    transparent 25px,
-    rgba(0, 255, 17, 0.5) 25px,
-    rgba(246, 6, 174, 0.5) 50px
-  );
-}
-
-@media screen and (min-width: 1000px) {
-  .cuadrado {
-    margin-left: 35%;
-    margin-right: 35%;
-  }
 }
