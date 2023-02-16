@@ -2,19 +2,17 @@ body {
   font-family: "Overpass", sans-serif;
   font-weight: normal;
   font-size: 100%;
-  color: #1b262c;
-
-  animation: color 50s linear infinite;
-  background-size: 400%;
+  color: #000000;
 }
 .titulo {
   text-align: center;
-  text-shadow: 3px 3px 1px red, 5px 5px 2px yellow, 8px 8px 3px blue;
+  text-shadow: 3px 3px 1px rgb(0, 255, 242), 5px 5px 2px rgb(255, 0, 128),
+    8px 8px 3px blue;
   margin-left: 1%;
   margin-right: 1%;
   width: auto; /* Ancho de 150 píxeles */
   height: 90px; /* Alto de 150 píxeles */
-  background: rgba(255, 255, 255, 0.525); /* Fondo de color rojo */
+  background: rgba(255, 255, 255, 0.353); /* Fondo de color rojo */
   border: transparent;
 }
 
@@ -35,20 +33,35 @@ h1 {
   display: flex;
   position: relative;
   flex-direction: column;
+  animation: color 50s linear infinite;
+  background-size: 400%;
 
   background-image: url(img/18824.jpg);
 }
-
+.contenedor{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  
+  
+}
 .cuadrado {
   display: flex;
+  float: right;
   position: relative;
   flex-direction: column;
-  margin: auto;
-  top: 20%;
-  padding: 10px;
-  margin-left: 25%;
-  margin-right: 25%;
-  background-image: url(img/18824.jpg);
-  text-align: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 1%;
+  padding-right: 3%;/*
+  margin-left: 50%;
+  margin-right: 10%;*/
+  background: linear-gradient(
+    rgba(226, 103, 230, 0.725),
+    rgba(230, 180, 52, 0.653)
+  );
+}
+
+.imagen {
+ width: 400px;
+ height: auto;
 }
