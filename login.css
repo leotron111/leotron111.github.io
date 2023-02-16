@@ -42,7 +42,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  
+  margin:1% 10% 0% 5%;
   
 }
 .cuadrado {
@@ -56,12 +56,12 @@ h1 {
   margin-left: 50%;
   margin-right: 10%;*/
   background: linear-gradient(
-    rgba(226, 103, 230, 0.725),
-    rgba(230, 180, 52, 0.653)
+    rgba(226, 103, 230, 0.458),
+    rgba(230, 180, 52, 0.341)
   );
 }
 
 .imagen {
- width: 400px;
+ width: 500px;
  height: auto;
 }
