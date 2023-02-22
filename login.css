@@ -1,19 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: "Overpass", sans-serif;
   font-weight: normal;
   font-size: 100%;
   color: #000000;
 }
-.titulo {
-  text-align: center;
-  text-shadow: 3px 3px 1px rgb(0, 255, 242), 5px 5px 2px rgb(255, 0, 128),
-    8px 8px 3px blue;
-  margin-left: 1%;
-  margin-right: 1%;
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  background: rgba(255, 255, 255, 0.353); /* Fondo de color rojo */
+  padding-right: 10px;
   width: auto; /* Ancho de 150 píxeles */
   height: 90px; /* Alto de 150 píxeles */
-  background: rgba(255, 255, 255, 0.353); /* Fondo de color rojo */
+  align-items: center;
+  align-content: space-between;
+  row-gap: 100px;
+}
+
+#titulo {
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 3%;
   border: transparent;
+}
+
+#titulo:hover {
+  text-shadow: 3px 3px 1px rgb(0, 255, 242), 5px 5px 2px rgb(255, 0, 128),
+    8px 8px 3px blue;
+}
+
+#proyectos {
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 3%;
+  border: transparent;
+}
+#proyectos:hover {
+  text-shadow: 3px 3px 1px rgb(0, 255, 242), 5px 5px 2px rgb(255, 0, 128),
+    8px 8px 3px blue;
+}
+
+#sobre {
+  margin-left: 1%;
+  margin-right: 1%;
+  border: transparent;
+  margin-bottom: 3%;
+}
+#sobre:hover {
+  text-shadow: 3px 3px 1px rgb(0, 255, 242), 5px 5px 2px rgb(255, 0, 128),
+    8px 8px 3px blue;
+}
+
+#logo {
+  margin-left: 1%;
+  margin-right: 1%;
+  border: transparent;
+  margin-bottom: 3%;
+  order: -1;
+  justify-self: start;
+  
 }
 
 @keyframes color {
@@ -28,6 +79,7 @@ body {
 
 h1 {
   color: #1b262c;
+  padding-top: 30px;
 }
 .fondo {
   display: flex;
@@ -38,30 +90,35 @@ h1 {
 
   background-image: url(img/18824.jpg);
 }
-.contenedor{
+.contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin:1% 10% 0% 5%;
-  
+  margin: 10% 10% 0% 5%;
 }
 .cuadrado {
   display: flex;
   float: right;
   position: relative;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding-left: 1%;
-  padding-right: 3%;/*
+  padding-right: 3%; /*
   margin-left: 50%;
   margin-right: 10%;*/
   background: linear-gradient(
     rgba(124, 103, 230, 0.737),
     rgba(232, 139, 255, 0.593)
   );
+  background-size: cover;
+  margin-left: 20px;
+}
+
+#lista{
+  padding: 20px;
 }
 
 .imagen {
- width: 500px;
- height: auto;
+  width: 90%;
+  height: auto;
 }
