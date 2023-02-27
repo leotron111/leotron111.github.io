@@ -351,3 +351,35 @@ svg {
   stroke-dashoffset: 0%;
   animation: stroke-offset 5.5s infinite linear;
 }
+
+
+.text-copy:nth-child(1) {
+  stroke: #7164ff;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #954ef9;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #009dbd;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #77fff8;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #1cf7ae;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
