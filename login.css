@@ -37,7 +37,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin: 10% 10% 0% 5%;
+  margin: 10% 10% 10% 5%;
 }
 .cuadrado {
   display: flex;
