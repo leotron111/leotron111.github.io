@@ -368,3 +368,14 @@ svg {
     stroke-dashoffset: -35%;
   }
 }
+
+.transition {
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.transition.active {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -55,6 +55,8 @@
     </div>
   </header>
   <body class="fondo">
+    <main class="transition">
+      
     <div class="contenedor">
       <img
         class="imagen"
@@ -70,5 +72,17 @@
         </h3>
       </section>
     </div>
+    </main>
+  
+    <script>
+      const mainSection = document.querySelector('main');
+      mainSection.classList.add('transition');
+      window.addEventListener('load', () => {
+        mainSection.classList.remove('transition');
+        setTimeout(() => {
+          mainSection.classList.add('active');
+        }, 0);
+      });
+    </script>
   </body>
 </html>
